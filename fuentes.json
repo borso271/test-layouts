@@ -64,6 +64,15 @@
     "height": 2100
   },
   {
+    "id": "03b-solea-blanco",
+    "file": "assets/screenshots/03b-solea-blanco.png",
+    "source": "03-solea-white-divider/03-solea-white-divider-desktop.png",
+    "description": "Soleá en carbón suave #34372f sobre blanco opaco #ffffff, datos #4b4f47 y línea inferior de 1 px en #d5d5cc. Variante preferida de la composición 03.",
+    "sha256": "cde7ab30cdf79f74f08a8b4a6ac6b6dc1d9d5b390a75e482cea2a3a6fa43fc5a",
+    "width": 2880,
+    "height": 2100
+  },
+  {
     "id": "04-solea-claro",
     "file": "assets/screenshots/04-solea-claro.png",
     "source": "solea-surface-layouts/solea-surface-vertical-left-desktop.png",

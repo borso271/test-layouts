@@ -1,6 +1,6 @@
 # Be Art — Presentación de propuestas de portada
 
-Presentación estática en español. Contiene diez capturas de escritorio: el diseño publicado y nueve variantes, agrupadas en cinco composiciones. No necesita instalación, compilación, base de datos ni servicios externos.
+Presentación estática en español. Contiene once capturas de escritorio: el diseño publicado y diez variantes, agrupadas en cinco composiciones, con la 03b como variante adicional de la 03. No necesita instalación, compilación, base de datos ni servicios externos.
 
 ## Abrir en local
 
@@ -12,7 +12,7 @@ python3 -m http.server 5502 --bind 127.0.0.1
 
 Después abre `http://127.0.0.1:5502/`. Si el puerto está ocupado, usa otro. Para detener el servidor, pulsa Ctrl+C en su terminal.
 
-Los controles funcionan sin conexión. La página presenta y compara los diseños; no contiene encuestas ni formularios de opinión. La numeración se mantiene: 01 es el título grande, 02 el título centrado y 03 la franja horizontal de ancho completo. Los comentarios son valoraciones de diseño y legibilidad, no una auditoría formal de accesibilidad.
+Los controles funcionan sin conexión. La página presenta y compara los diseños; no contiene encuestas ni formularios de opinión. La numeración se mantiene: 01 es el título grande, 02 el título centrado y 03 la franja horizontal de ancho completo; 03b mantiene esa composición sobre blanco, con una línea inferior, y es la variante preferida. Los comentarios son valoraciones de diseño y legibilidad, no una auditoría formal de accesibilidad.
 
 ## GitHub Pages
 
@@ -26,9 +26,9 @@ La presentación es independiente de la web de producción de Be Art.
 
 ## Contenido y procedencia
 
-- `index.html`: diseño actual, motivos para retirar las fechas de la imagen, diez observaciones para cada uno de los ensayos 01 y 02, selector de propuestas y recomendación de partir de la 03 con Soleá sobre superficie clara.
+- `index.html`: diseño actual, motivos para retirar las fechas de la imagen, diez observaciones para cada uno de los ensayos 01 y 02, selector de propuestas y recomendación de partir de la 03b con Soleá sobre blanco y línea inferior, manteniendo la 03 como alternativa.
 - `styles.css` y `review.js`: estilos e interacciones sin dependencias.
-- `assets/screenshots/`: diez PNG originales a 2880 × 2100 px, sin recortar ni retocar.
+- `assets/screenshots/`: once PNG originales a 2880 × 2100 px, sin recortar ni retocar.
 - `assets/previews/`: copias WebP reducidas para cargar la presentación con rapidez; los enlaces de ampliación abren los PNG originales.
 - `fuentes.json`: procedencia y huella SHA-256 de cada captura.
 
@@ -39,6 +39,8 @@ Las propuestas 01, 02 y 04 (Soleá y superficie clara) coinciden exactamente con
 La propuesta 03 con Soleá y superficie clara se ha actualizado con letras de carbón más suave (#34372f), datos en #4b4f47 y fondo gris neutro ligeramente más claro (#ededed). Conserva la composición y la imagen en escala de grises. La captura procede de `03-solea-neutral-gray/`; los originales anteriores se conservan fuera de esta presentación.
 
 Se han excluido las capturas intermedias con esquinas redondeadas, las versiones de superficie con Soleá en negro puro sustituidas por carbón y los duplicados. La composición compacta se muestra en su versión final disponible. No se han fabricado combinaciones adicionales.
+
+La propuesta 03b es una captura del sitio local con la franja blanca y la línea inferior de 1 px en #d5d5cc. Se presenta justo después de la 03. La selección, las flechas y el botón de recomendación incluyen esta nueva variante.
 
 La captura de la propuesta 04 con fondo carbón es una versión anterior en inglés. Se identifica en la presentación y se conserva sin editar. Esta comparación se centra en escritorio; las capturas móviles históricas no se incluyen.
 

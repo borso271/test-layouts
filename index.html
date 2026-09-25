@@ -8,8 +8,8 @@
   <meta name="theme-color" content="#fafaf8">
   <title>La portada de Be Art — Propuestas para compartir</title>
   <link rel="icon" href="assets/logo-be-art.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
-  <script src="review.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=03b">
+  <script src="review.js?v=03b" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -69,7 +69,7 @@
     <section id="propuestas" class="section proposals" aria-labelledby="proposals-title">
       <div class="wrap">
         <div class="section-heading">
-          <div><p class="eyebrow">02 / Explorar propuestas</p><h2 id="proposals-title">Cinco composiciones.</h2></div>
+          <div><p class="eyebrow">02 / Explorar propuestas</p><h2 id="proposals-title">Cinco composiciones<br>y una variante.</h2></div>
           <p>Las dos primeras prueban a retirar las fechas. Las siguientes separan el texto de la obra. Empezamos con Soleá y mantenemos las variaciones disponibles para comparar.</p>
         </div>
         <p class="context-note">Todas son capturas de escritorio, con la navegación y el comienzo de la página. Las propuestas incluyen otros ajustes de la web; aquí nos centramos en la cabecera.</p>
@@ -82,7 +82,10 @@
             <img src="assets/previews/02-titulo-centrado-thumb.webp" alt="" width="400" height="292" loading="lazy"><span><b>02</b> Título centrado</span><small>Sobre la imagen</small>
           </button>
           <button class="composition" type="button" data-option="03" aria-pressed="false" aria-controls="viewer">
-            <img src="assets/previews/03-solea-claro-thumb.webp" alt="" width="400" height="292" loading="lazy"><span><b>03</b> Franja horizontal</span><small>Ancho completo</small>
+            <img src="assets/previews/03-solea-claro-thumb.webp" alt="" width="400" height="292" loading="lazy"><span><b>03</b> Franja horizontal</span><small>Fondos gris y carbón</small>
+          </button>
+          <button class="composition" type="button" data-option="03b" aria-pressed="false" aria-controls="viewer">
+            <img src="assets/previews/03b-solea-blanco-thumb.webp" alt="" width="400" height="292" loading="lazy"><span><b>03b</b> Franja blanca</span><small>Con línea · Preferida</small>
           </button>
           <button class="composition" type="button" data-option="04" aria-pressed="false" aria-controls="viewer">
             <img src="assets/previews/04-solea-claro-thumb.webp" alt="" width="400" height="292" loading="lazy"><span><b>04</b> Franja vertical</span><small>A la izquierda</small>
@@ -94,7 +97,7 @@
 
         <article id="viewer" class="viewer" aria-labelledby="option-title">
           <div class="viewer-heading">
-            <div><p class="eyebrow" id="option-counter">Propuesta 01 de 05</p><h3 id="option-title">Título grande sobre la imagen</h3></div>
+            <div><p class="eyebrow" id="option-counter">Propuesta 01 · 1 de 6</p><h3 id="option-title">Título grande sobre la imagen</h3></div>
             <div class="pager"><button type="button" id="previous" aria-label="Propuesta anterior" disabled>←</button><button type="button" id="next" aria-label="Propuesta siguiente">→</button></div>
           </div>
           <p id="option-description" class="option-description">Mantiene la escala del título original, elimina las fechas y baja el conjunto hasta igualar el margen inferior con los laterales.</p>
@@ -156,7 +159,7 @@
 
         <details class="all-files">
           <summary>Ver la lista de todas las capturas</summary>
-          <p>9 variantes y el diseño actual. Cada enlace abre la captura original a resolución completa en una pestaña nueva.</p>
+          <p>10 variantes y el diseño actual. Cada enlace abre la captura original a resolución completa en una pestaña nueva.</p>
           <ul>
             <li><a href="assets/screenshots/00-actual.png" target="_blank" rel="noopener">00 · Diseño actual publicado</a></li>
             <li><a href="assets/screenshots/01-gran-titulo.png" target="_blank" rel="noopener">01 · Título grande · Soleá · Sin fechas</a></li>
@@ -165,6 +168,7 @@
             <li><a href="assets/screenshots/03-solea-carbon.png" target="_blank" rel="noopener">03 · Franja horizontal · Soleá · Carbón al 70 %</a></li>
             <li><a href="assets/screenshots/03-futura-claro.png" target="_blank" rel="noopener">03 · Franja horizontal · Futura · Superficie clara</a></li>
             <li><a href="assets/screenshots/03-futura-carbon.png" target="_blank" rel="noopener">03 · Franja horizontal · Futura · Carbón al 70 %</a></li>
+            <li><a href="assets/screenshots/03b-solea-blanco.png" target="_blank" rel="noopener">03b · Franja horizontal blanca con línea · Soleá · Preferida</a></li>
             <li><a href="assets/screenshots/04-solea-claro.png" target="_blank" rel="noopener">04 · Franja vertical · Soleá · Superficie clara</a></li>
             <li><a href="assets/screenshots/04-solea-carbon.png" target="_blank" rel="noopener">04 · Franja vertical · Soleá · Carbón al 70 % (captura en inglés)</a></li>
             <li><a href="assets/screenshots/05-solea-claro.png" target="_blank" rel="noopener">05 · Franja compacta · Soleá · Superficie clara</a></li>
@@ -176,10 +180,11 @@
 
     <section id="recomendacion" class="section wrap recommendation" aria-labelledby="recommendation-title">
       <div class="section-heading">
-        <div><p class="eyebrow">03 / Nuestra propuesta de partida</p><h2 id="recommendation-title">Partir de la opción 03.</h2></div>
-        <p>Franja horizontal de ancho completo, con <strong>Soleá en carbón sobre una superficie clara y opaca.</strong> Nos parece la base más sólida para seguir afinando la portada.</p>
+        <div><p class="eyebrow">03 / Nuestra propuesta de partida</p><h2 id="recommendation-title">Preferimos la opción 03b.</h2></div>
+        <p><strong>La 03 y la 03b comparten la composición que recomendamos:</strong> franja horizontal de ancho completo con Soleá. Nos inclinamos por la 03b, con fondo blanco y una línea inferior sutil, como punto de partida.</p>
       </div>
       <p class="recommendation-lead">Esta composición da un lugar reconocible a cada elemento: primero la pintura, después el nombre y los datos de la bienal, y a continuación el contenido de la página.</p>
+      <p><strong>Por qué preferimos el blanco.</strong> Se integra mejor con la página y reduce el peso visual de la franja; la línea basta para separarla del contenido siguiente. El gris de la 03 sigue siendo una buena alternativa si buscamos un bloque más definido. La preferencia principal es por esta composición; el tono del fondo puede seguir afinándose.</p>
       <ol class="recommendation-reasons">
         <li><h3>La obra recupera espacio.</h3><p>La zona principal de la pintura queda libre de letras. La franja opaca se percibe como un recorte del borde inferior, en lugar de una superposición sobre las figuras. Aunque no muestra la obra completa, permite apreciar la escena con menos interferencias.</p></li>
         <li><h3>Soleá conserva su carácter.</h3><p>El título sigue siendo grande y reconocible. El nombre completo se lee seguido y destaca sobre un fondo uniforme.</p></li>
@@ -190,7 +195,7 @@
       </ol>
       <div class="recommendation-next">
         <p><strong>Una base para desarrollar.</strong> Aún conviene afinar el tamaño y el espacio alrededor del título, el equilibrio con los datos laterales y la altura de la franja, que cubre parte del borde inferior de la pintura.</p>
-        <button type="button" class="text-link" id="show-recommended">Ver 03 con Soleá y fondo claro <span aria-hidden="true">↑</span></button>
+        <button type="button" class="text-link" id="show-recommended">Ver 03b con fondo blanco <span aria-hidden="true">↑</span></button>
       </div>
     </section>
   </main>

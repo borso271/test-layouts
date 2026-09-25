@@ -18,7 +18,7 @@
     '03': {
       title: 'Franja horizontal de ancho completo',
       description: 'Reúne la presentación de la bienal, el título y las fechas en una banda inferior que ocupa todo el ancho. El título se lee en una sola línea.',
-      observation: 'Esta composición separa el título y los datos de la zona principal de la pintura. Recomendamos partir de la variante con Soleá en carbón sobre superficie clara y opaca.',
+      observation: 'Esta es la composición que recomendamos junto con la 03b. El gris delimita con claridad el bloque de título y datos; preferimos ligeramente el blanco con línea de la 03b por su ligereza e integración con la página.',
       variants: [
         { id: '03-solea-claro', font: 'solea', background: 'claro', label: 'Soleá · Superficie clara · Letras carbón' },
         { id: '03-solea-carbon', font: 'solea', background: 'carbon', label: 'Soleá · Carbón al 70 % · Letras blancas' },
@@ -26,6 +26,13 @@
         { id: '03-futura-carbon', font: 'futura', background: 'carbon', label: 'Futura · Carbón al 70 % · Letras blancas' }
       ],
       alt: 'Franja inferior de ancho completo, con la presentación de la bienal a la izquierda, el título en el centro y las fechas a la derecha.'
+    },
+    '03b': {
+      title: 'Franja blanca con línea inferior',
+      description: 'Conserva la composición de la 03 con Soleá y letras en carbón suave, pero cambia el fondo gris por blanco y añade una línea sutil debajo.',
+      observation: 'Es nuestra variante preferida: el blanco aligera la franja y la integra con la página. La línea marca la separación con el contenido sin añadir el peso visual de un panel gris. La 03 sigue siendo una buena alternativa.',
+      variants: [{ id: '03b-solea-blanco', font: 'solea', background: 'blanco', label: 'Soleá · Fondo blanco · Línea inferior · Preferida' }],
+      alt: 'Franja horizontal de ancho completo sobre blanco, con título Soleá en carbón suave, presentación a la izquierda, fechas a la derecha y una línea fina debajo.'
     },
     '04': {
       title: 'Franja vertical a la izquierda',
@@ -71,7 +78,7 @@
       selected = variant;
       remembered[id] = variant.id;
       $('option-title').textContent = option.title;
-      $('option-counter').textContent = 'Propuesta ' + id + ' de 05';
+      $('option-counter').textContent = 'Propuesta ' + id + ' · ' + (order.indexOf(id) + 1) + ' de ' + order.length;
       $('option-description').textContent = option.description;
       $('option-observation').replaceChildren();
       const lead = document.createElement('strong');
@@ -94,12 +101,12 @@
         input.disabled = !option.variants.some(v => v.font === input.value);
         input.checked = input.value === variant.font;
       });
-      $('background-controls').hidden = variant.background === 'imagen';
+      $('background-controls').hidden = variant.background === 'imagen' || id === '03b';
       backgroundInputs.forEach(input => {
         input.disabled = !option.variants.some(v => v.background === input.value && v.font === variant.font);
         input.checked = input.value === variant.background;
       });
-      $('variant-availability').textContent = id === '03' ? 'Dos tipografías y dos fondos. Las letras sobre la superficie clara son oscuras.' : id === '04' ? 'Disponible en Soleá, con dos fondos.' : id === '05' ? 'La versión final disponible es Soleá sobre superficie clara.' : 'Esta composición está disponible en Soleá, sin franja de fondo.';
+      $('variant-availability').textContent = id === '03' ? 'Dos tipografías y dos fondos. Las letras sobre la superficie clara son oscuras.' : id === '03b' ? 'Soleá sobre blanco, con línea inferior. Nuestra variante preferida.' : id === '04' ? 'Disponible en Soleá, con dos fondos.' : id === '05' ? 'La versión final disponible es Soleá sobre superficie clara.' : 'Esta composición está disponible en Soleá, sin franja de fondo.';
       $('previous').disabled = id === order[0];
       $('next').disabled = id === order[order.length - 1];
       $('viewer-status').textContent = 'Propuesta ' + id + '. ' + option.title + '. ' + variant.label;
@@ -127,7 +134,7 @@
     if (variant) render(current, variant.id);
   }));
   $('show-recommended').addEventListener('click', async () => {
-    await render('03', '03-solea-claro');
+    await render('03b', '03b-solea-blanco');
     $('viewer').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'start' });
     $('option-title').setAttribute('tabindex', '-1');
     $('option-title').focus({ preventScroll: true });
