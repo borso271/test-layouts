@@ -71,7 +71,8 @@
     $('viewer-status').textContent = 'Cargando la propuesta ' + id + '…';
     try {
       const image = new Image();
-      image.src = 'assets/previews/' + variant.id + '.webp';
+      const version = variant.id === '03b-solea-blanco' ? '?v=brightness90' : '';
+      image.src = 'assets/previews/' + variant.id + '.webp' + version;
       await image.decode();
       if (request !== revision) return;
       current = id;
@@ -90,7 +91,7 @@
       $('variant-image').src = image.src;
       $('variant-image').alt = 'Propuesta ' + id + ': ' + option.alt + ' ' + variant.label + '.';
       $('variant-caption').textContent = id + ' · ' + variant.label;
-      const full = 'assets/screenshots/' + variant.id + '.png';
+      const full = 'assets/screenshots/' + variant.id + '.png' + version;
       $('variant-full').href = full;
       $('variant-image-link').href = full;
       $('variant-image-link').setAttribute('aria-label', 'Abrir captura de la propuesta ' + id + ' a resolución completa, en una pestaña nueva');

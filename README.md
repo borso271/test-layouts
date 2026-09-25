@@ -40,7 +40,7 @@ La propuesta 03 con Soleá y superficie clara se ha actualizado con letras de ca
 
 Se han excluido las capturas intermedias con esquinas redondeadas, las versiones de superficie con Soleá en negro puro sustituidas por carbón y los duplicados. La composición compacta se muestra en su versión final disponible. No se han fabricado combinaciones adicionales.
 
-La propuesta 03b es una captura del sitio local con la franja blanca y la línea inferior de 1 px en #d5d5cc. Se presenta justo después de la 03. La selección, las flechas y el botón de recomendación incluyen esta nueva variante.
+La propuesta 03b es una captura del sitio local con la franja blanca y la línea inferior de 1 px en #d5d5cc. La pintura está en escala de grises con brillo al 90 %, ligeramente reducido desde el 93 % inicial; el resto de la captura no cambia. Se presenta justo después de la 03. La selección, las flechas y el botón de recomendación incluyen esta nueva variante.
 
 La captura de la propuesta 04 con fondo carbón es una versión anterior en inglés. Se identifica en la presentación y se conserva sin editar. Esta comparación se centra en escritorio; las capturas móviles históricas no se incluyen.
 
