@@ -1,0 +1,93 @@
+[
+  {
+    "id": "00-actual",
+    "file": "assets/screenshots/00-actual.png",
+    "source": "https://beartgroup.com/",
+    "capturedAt": "2026-09-25T12:56:16.864Z",
+    "description": "Captura de producción, sin cambios de contenido o estilo.",
+    "sha256": "f22a431dfd635deba9b1d56cc3442cb7bbf1e29bd843ad7737b2e556d57e3286",
+    "width": 2880,
+    "height": 2100
+  },
+  {
+    "id": "01-gran-titulo",
+    "file": "assets/screenshots/01-gran-titulo.png",
+    "source": "original-no-dates/original-size-no-dates-desktop.png",
+    "description": "Soleá; título grande sin fechas; márgenes corregidos.",
+    "sha256": "1c050b8e1ea5cc139f2930e264e408b6ac511b1cdc36bca3df5c28050d1bccd1",
+    "width": 2880,
+    "height": 2100
+  },
+  {
+    "id": "02-titulo-centrado",
+    "file": "assets/screenshots/02-titulo-centrado.png",
+    "source": "original-no-dates/smaller-centered-no-dates-desktop.png",
+    "description": "Soleá; título al 80 %, centrado, sin fechas.",
+    "sha256": "24a3dc71b24fef329b3380e91c595c781a43de0fe15b6a6a4c8f0d0b38396b6c",
+    "width": 2880,
+    "height": 2100
+  },
+  {
+    "id": "03-solea-claro",
+    "file": "assets/screenshots/03-solea-claro.png",
+    "source": "03-solea-neutral-gray/03-solea-neutral-gray-desktop.png",
+    "description": "Soleá en carbón suave #34372f, datos #4b4f47, sobre gris neutro opaco #ededed; imagen en escala de grises; esquinas rectas.",
+    "sha256": "e2bca230c6ce7964d26c3d410dc3b2f2769c7695e46ec19f9d7095f2524ce91d",
+    "width": 2880,
+    "height": 2100
+  },
+  {
+    "id": "03-solea-carbon",
+    "file": "assets/screenshots/03-solea-carbon.png",
+    "source": "horizontal-inline-four-variants/solea-charcoal-desktop.png",
+    "description": "Soleá blanca sobre carbón al 70 %; esquinas rectas.",
+    "sha256": "d7979c38bd5f2d533f70446f1ad9f8435955e10cace002b12676f6aec37c6478",
+    "width": 2880,
+    "height": 2100
+  },
+  {
+    "id": "03-futura-claro",
+    "file": "assets/screenshots/03-futura-claro.png",
+    "source": "horizontal-inline-four-variants/futura-surface-desktop.png",
+    "description": "Futura sobre superficie clara; esquinas rectas.",
+    "sha256": "951fb7a08b1a70c8257936e35cc63e9abe41f2fb2b18e81a4df992836e9c385a",
+    "width": 2880,
+    "height": 2100
+  },
+  {
+    "id": "03-futura-carbon",
+    "file": "assets/screenshots/03-futura-carbon.png",
+    "source": "horizontal-inline-four-variants/futura-charcoal-desktop.png",
+    "description": "Futura blanca sobre carbón al 70 %; esquinas rectas.",
+    "sha256": "f7d3c8410912e9529b27fed83ca719e8d97251bbc1ec830a9cb5a1c893eba5d4",
+    "width": 2880,
+    "height": 2100
+  },
+  {
+    "id": "04-solea-claro",
+    "file": "assets/screenshots/04-solea-claro.png",
+    "source": "solea-surface-layouts/solea-surface-vertical-left-desktop.png",
+    "description": "Soleá #20211f sobre superficie opaca #e8ebeb; esquinas rectas.",
+    "sha256": "e47222589d703d2a80e07f89c656a1cfe62f9e868cdf9552ef94b7493458fba2",
+    "width": 2880,
+    "height": 2100
+  },
+  {
+    "id": "04-solea-carbon",
+    "file": "assets/screenshots/04-solea-carbon.png",
+    "source": "solea/solea-dark-desktop.png",
+    "description": "Soleá blanca sobre carbón al 70 %; captura anterior en inglés, sin modificar.",
+    "sha256": "cbe481e3941f8710fff8f8b3e33f845f31a9036a1fae259a02389aa49e1a12d9",
+    "width": 2880,
+    "height": 2100
+  },
+  {
+    "id": "05-solea-claro",
+    "file": "assets/screenshots/05-solea-claro.png",
+    "source": "solea-surface-layouts/solea-surface-bottom-left-desktop.png",
+    "description": "Soleá #20211f sobre superficie opaca #e8ebeb; esquinas rectas.",
+    "sha256": "43820656ad80150de0a95f38e1d6f2955ba24298d0e1b738a4917e76e264935c",
+    "width": 2880,
+    "height": 2100
+  }
+]
